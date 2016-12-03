@@ -11,6 +11,13 @@
 
 @implementation Dictionary
 
+- (id)copyWithZone:(NSZone *)zone
+{
+	Dictionary* ret = [[Dictionary alloc] init];
+	ret.data = [_data copyWithZone:zone];
+	return ret;
+}
+
 -(Dictionary*) init:(NSInputStream*) stream
 {
 	self = [super init];

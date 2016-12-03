@@ -25,7 +25,7 @@
 	do{
 		
 		ok = ([stream read:(bytes+read) maxLength:1] == 1);
-	}while(ok && isnumber(bytes[read++]));
+	}while(ok && isnumber(bytes[read++]) && read < sizeof(bytes));
 	if(ok)
 	{
 		NSInteger last = read-1;

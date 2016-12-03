@@ -10,6 +10,11 @@
 
 @implementation Element
 
+- (id)copyWithZone:(NSZone *)zone
+{
+	return [[Element alloc] init];
+}
+
 + (Element *)terminator
 {
 	static Element* el = nil;

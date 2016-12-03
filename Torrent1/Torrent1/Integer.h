@@ -10,7 +10,7 @@
 #import "Element.h"
 
 @interface Integer : Element
-@property NSInteger* data;
+@property NSInteger data;
 
 - (id)copyWithZone:(NSZone *)zone;
 - (Integer*)init:(NSInputStream *)stream;
