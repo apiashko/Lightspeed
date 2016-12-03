@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A689ED21DF2F7C300A292DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A689ED11DF2F7C300A292DD /* AppDelegate.m */; };
+		0A689ED51DF2F7C300A292DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A689ED41DF2F7C300A292DD /* main.m */; };
+		0A689ED81DF2F7C300A292DD /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A689ED71DF2F7C300A292DD /* Document.m */; };
+		0A689EDB1DF2F7C300A292DD /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A689ED91DF2F7C300A292DD /* Document.xib */; };
+		0A689EDD1DF2F7C300A292DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A689EDC1DF2F7C300A292DD /* Assets.xcassets */; };
+		0A689EE01DF2F7C300A292DD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A689EDE1DF2F7C300A292DD /* MainMenu.xib */; };
+		0A689EEB1DF2F7C300A292DD /* Torrent1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A689EEA1DF2F7C300A292DD /* Torrent1Tests.m */; };
+		0A689EF61DF2F7C300A292DD /* Torrent1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A689EF51DF2F7C300A292DD /* Torrent1UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A689EE71DF2F7C300A292DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A689EC51DF2F7C200A292DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A689ECC1DF2F7C200A292DD;
+			remoteInfo = Torrent1;
+		};
+		0A689EF21DF2F7C300A292DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A689EC51DF2F7C200A292DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A689ECC1DF2F7C200A292DD;
+			remoteInfo = Torrent1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A689ECD1DF2F7C300A292DD /* Torrent1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torrent1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A689ED01DF2F7C300A292DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A689ED11DF2F7C300A292DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A689ED41DF2F7C300A292DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A689ED61DF2F7C300A292DD /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		0A689ED71DF2F7C300A292DD /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		0A689EDA1DF2F7C300A292DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		0A689EDC1DF2F7C300A292DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A689EDF1DF2F7C300A292DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0A689EE11DF2F7C300A292DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A689EE61DF2F7C300A292DD /* Torrent1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Torrent1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A689EEA1DF2F7C300A292DD /* Torrent1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Torrent1Tests.m; sourceTree = "<group>"; };
+		0A689EEC1DF2F7C300A292DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A689EF11DF2F7C300A292DD /* Torrent1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Torrent1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A689EF51DF2F7C300A292DD /* Torrent1UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Torrent1UITests.m; sourceTree = "<group>"; };
+		0A689EF71DF2F7C300A292DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A689ECA1DF2F7C200A292DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A689EE31DF2F7C300A292DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A689EEE1DF2F7C300A292DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A689EC41DF2F7C200A292DD = {
+			isa = PBXGroup;
+			children = (
+				0A689ECF1DF2F7C300A292DD /* Torrent1 */,
+				0A689EE91DF2F7C300A292DD /* Torrent1Tests */,
+				0A689EF41DF2F7C300A292DD /* Torrent1UITests */,
+				0A689ECE1DF2F7C300A292DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A689ECE1DF2F7C300A292DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A689ECD1DF2F7C300A292DD /* Torrent1.app */,
+				0A689EE61DF2F7C300A292DD /* Torrent1Tests.xctest */,
+				0A689EF11DF2F7C300A292DD /* Torrent1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A689ECF1DF2F7C300A292DD /* Torrent1 */ = {
+			isa = PBXGroup;
+			children = (
+				0A689ED01DF2F7C300A292DD /* AppDelegate.h */,
+				0A689ED11DF2F7C300A292DD /* AppDelegate.m */,
+				0A689ED61DF2F7C300A292DD /* Document.h */,
+				0A689ED71DF2F7C300A292DD /* Document.m */,
+				0A689ED91DF2F7C300A292DD /* Document.xib */,
+				0A689EDC1DF2F7C300A292DD /* Assets.xcassets */,
+				0A689EDE1DF2F7C300A292DD /* MainMenu.xib */,
+				0A689EE11DF2F7C300A292DD /* Info.plist */,
+				0A689ED31DF2F7C300A292DD /* Supporting Files */,
+			);
+			path = Torrent1;
+			sourceTree = "<group>";
+		};
+		0A689ED31DF2F7C300A292DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A689ED41DF2F7C300A292DD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A689EE91DF2F7C300A292DD /* Torrent1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0A689EEA1DF2F7C300A292DD /* Torrent1Tests.m */,
+				0A689EEC1DF2F7C300A292DD /* Info.plist */,
+			);
+			path = Torrent1Tests;
+			sourceTree = "<group>";
+		};
+		0A689EF41DF2F7C300A292DD /* Torrent1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				0A689EF51DF2F7C300A292DD /* Torrent1UITests.m */,
+				0A689EF71DF2F7C300A292DD /* Info.plist */,
+			);
+			path = Torrent1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A689ECC1DF2F7C200A292DD /* Torrent1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A689EFA1DF2F7C300A292DD /* Build configuration list for PBXNativeTarget "Torrent1" */;
+			buildPhases = (
+				0A689EC91DF2F7C200A292DD /* Sources */,
+				0A689ECA1DF2F7C200A292DD /* Frameworks */,
+				0A689ECB1DF2F7C200A292DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Torrent1;
+			productName = Torrent1;
+			productReference = 0A689ECD1DF2F7C300A292DD /* Torrent1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A689EE51DF2F7C300A292DD /* Torrent1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A689EFD1DF2F7C300A292DD /* Build configuration list for PBXNativeTarget "Torrent1Tests" */;
+			buildPhases = (
+				0A689EE21DF2F7C300A292DD /* Sources */,
+				0A689EE31DF2F7C300A292DD /* Frameworks */,
+				0A689EE41DF2F7C300A292DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A689EE81DF2F7C300A292DD /* PBXTargetDependency */,
+			);
+			name = Torrent1Tests;
+			productName = Torrent1Tests;
+			productReference = 0A689EE61DF2F7C300A292DD /* Torrent1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A689EF01DF2F7C300A292DD /* Torrent1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A689F001DF2F7C300A292DD /* Build configuration list for PBXNativeTarget "Torrent1UITests" */;
+			buildPhases = (
+				0A689EED1DF2F7C300A292DD /* Sources */,
+				0A689EEE1DF2F7C300A292DD /* Frameworks */,
+				0A689EEF1DF2F7C300A292DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A689EF31DF2F7C300A292DD /* PBXTargetDependency */,
+			);
+			name = Torrent1UITests;
+			productName = Torrent1UITests;
+			productReference = 0A689EF11DF2F7C300A292DD /* Torrent1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A689EC51DF2F7C200A292DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Alex Piashko";
+				TargetAttributes = {
+					0A689ECC1DF2F7C200A292DD = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U6ZDYX2A2T;
+						ProvisioningStyle = Automatic;
+					};
+					0A689EE51DF2F7C300A292DD = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U6ZDYX2A2T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0A689ECC1DF2F7C200A292DD;
+					};
+					0A689EF01DF2F7C300A292DD = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = U6ZDYX2A2T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0A689ECC1DF2F7C200A292DD;
+					};
+				};
+			};
+			buildConfigurationList = 0A689EC81DF2F7C200A292DD /* Build configuration list for PBXProject "Torrent1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A689EC41DF2F7C200A292DD;
+			productRefGroup = 0A689ECE1DF2F7C300A292DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A689ECC1DF2F7C200A292DD /* Torrent1 */,
+				0A689EE51DF2F7C300A292DD /* Torrent1Tests */,
+				0A689EF01DF2F7C300A292DD /* Torrent1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A689ECB1DF2F7C200A292DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A689EDD1DF2F7C300A292DD /* Assets.xcassets in Resources */,
+				0A689EDB1DF2F7C300A292DD /* Document.xib in Resources */,
+				0A689EE01DF2F7C300A292DD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A689EE41DF2F7C300A292DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A689EEF1DF2F7C300A292DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A689EC91DF2F7C200A292DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A689ED81DF2F7C300A292DD /* Document.m in Sources */,
+				0A689ED51DF2F7C300A292DD /* main.m in Sources */,
+				0A689ED21DF2F7C300A292DD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A689EE21DF2F7C300A292DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A689EEB1DF2F7C300A292DD /* Torrent1Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A689EED1DF2F7C300A292DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A689EF61DF2F7C300A292DD /* Torrent1UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A689EE81DF2F7C300A292DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A689ECC1DF2F7C200A292DD /* Torrent1 */;
+			targetProxy = 0A689EE71DF2F7C300A292DD /* PBXContainerItemProxy */;
+		};
+		0A689EF31DF2F7C300A292DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A689ECC1DF2F7C200A292DD /* Torrent1 */;
+			targetProxy = 0A689EF21DF2F7C300A292DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A689ED91DF2F7C300A292DD /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A689EDA1DF2F7C300A292DD /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		0A689EDE1DF2F7C300A292DD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A689EDF1DF2F7C300A292DD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A689EF81DF2F7C300A292DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0A689EF91DF2F7C300A292DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0A689EFB1DF2F7C300A292DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U6ZDYX2A2T;
+				INFOPLIST_FILE = Torrent1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.piashko.Torrent1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A689EFC1DF2F7C300A292DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U6ZDYX2A2T;
+				INFOPLIST_FILE = Torrent1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.piashko.Torrent1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0A689EFE1DF2F7C300A292DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U6ZDYX2A2T;
+				INFOPLIST_FILE = Torrent1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.piashko.Torrent1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Torrent1.app/Contents/MacOS/Torrent1";
+			};
+			name = Debug;
+		};
+		0A689EFF1DF2F7C300A292DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U6ZDYX2A2T;
+				INFOPLIST_FILE = Torrent1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.piashko.Torrent1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Torrent1.app/Contents/MacOS/Torrent1";
+			};
+			name = Release;
+		};
+		0A689F011DF2F7C300A292DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U6ZDYX2A2T;
+				INFOPLIST_FILE = Torrent1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.piashko.Torrent1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Torrent1;
+			};
+			name = Debug;
+		};
+		0A689F021DF2F7C300A292DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = U6ZDYX2A2T;
+				INFOPLIST_FILE = Torrent1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.piashko.Torrent1UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Torrent1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A689EC81DF2F7C200A292DD /* Build configuration list for PBXProject "Torrent1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A689EF81DF2F7C300A292DD /* Debug */,
+				0A689EF91DF2F7C300A292DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A689EFA1DF2F7C300A292DD /* Build configuration list for PBXNativeTarget "Torrent1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A689EFB1DF2F7C300A292DD /* Debug */,
+				0A689EFC1DF2F7C300A292DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A689EFD1DF2F7C300A292DD /* Build configuration list for PBXNativeTarget "Torrent1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A689EFE1DF2F7C300A292DD /* Debug */,
+				0A689EFF1DF2F7C300A292DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A689F001DF2F7C300A292DD /* Build configuration list for PBXNativeTarget "Torrent1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A689F011DF2F7C300A292DD /* Debug */,
+				0A689F021DF2F7C300A292DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A689EC51DF2F7C200A292DD /* Project object */;
+}
