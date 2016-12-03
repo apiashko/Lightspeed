@@ -35,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A62B8951DF2FB14001A4CC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Document.strings; sourceTree = "<group>"; };
 		0A689ECD1DF2F7C300A292DD /* Torrent1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Torrent1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A689ED01DF2F7C300A292DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0A689ED11DF2F7C300A292DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -318,6 +319,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0A689EDA1DF2F7C300A292DD /* Base */,
+				0A62B8951DF2FB14001A4CC6 /* en */,
 			);
 			name = Document.xib;
 			sourceTree = "<group>";
@@ -519,6 +521,7 @@
 				0A689EFC1DF2F7C300A292DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A689EFD1DF2F7C300A292DD /* Build configuration list for PBXNativeTarget "Torrent1Tests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +530,7 @@
 				0A689EFF1DF2F7C300A292DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A689F001DF2F7C300A292DD /* Build configuration list for PBXNativeTarget "Torrent1UITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +539,7 @@
 				0A689F021DF2F7C300A292DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
