@@ -57,6 +57,7 @@ NSString* _Title;
 	
 	// post parsing processing
 	[_torrentTree fixDateFormat];
+	[_torrentTree mapPieces];
 
 	return YES;
 }

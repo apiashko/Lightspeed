@@ -16,5 +16,6 @@
 
 - (NSString *__nonnull)getTitle;
 - (void)fixDateFormat;
+- (void)mapPieces;
 
 @end

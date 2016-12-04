@@ -14,6 +14,7 @@
 {
 	String* ret = [[String alloc] init];
 	ret.data = [_data copyWithZone:zone];
+	ret.rawData = [_rawData copyWithZone:zone];
 	return ret;
 }
 
@@ -36,6 +37,14 @@
 	{
 		//NSLog(@"error reading string data from streeam");
 	}
+	return self;
+}
+
+-(String*) init:(NSString*)str
+{
+	self = [super init];
+	_rawData = nil;
+	_data = str;
 	return self;
 }
 

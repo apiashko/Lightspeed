@@ -56,7 +56,22 @@
 	id key = nil;
 	while ( (key = [enumerator nextObject]) != nil)
 	{
+#if 0
+		// this just misfires time to time, figure out if you have time left
 		id obj = [_data objectForKey:key];
+#else
+		static id obj = nil;
+		obj = nil;
+		[_data enumerateKeysAndObjectsWithOptions:NSEnumerationConcurrent usingBlock:
+		 ^(id aKey, id anObject, BOOL *stop)
+		 {
+			 if(key == aKey)
+			 {
+				 obj = (Element *)anObject;
+				 *stop = YES;
+			 }
+		 }];
+#endif
 		if ([obj isKindOfClass:[Element class]])
 		{
 			Element *next = (Element *)obj;

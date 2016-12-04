@@ -16,6 +16,7 @@
 
 - (id)copyWithZone:(NSZone *)zone;
 - (String *)init:(NSInputStream *)stream length:(NSInteger)toProcess;
+- (String *)init:(NSString*)str;
 
 - (NSString*)label;
 

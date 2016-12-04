@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1FB6D41DF48C82003DA76E /* PiecesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FB6D31DF48C82003DA76E /* PiecesList.m */; };
+		0A1FB6D71DF491F0003DA76E /* Sha1.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1FB6D61DF491F0003DA76E /* Sha1.m */; };
 		0A373F981DF36A3F00F07D03 /* Factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A373F971DF36A3F00F07D03 /* Factory.m */; };
 		0A373F9B1DF36D9300F07D03 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A373F9A1DF36D9300F07D03 /* List.m */; };
 		0A373F9E1DF36DAC00F07D03 /* Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A373F9D1DF36DAC00F07D03 /* Dictionary.m */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A1FB6D21DF48C82003DA76E /* PiecesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PiecesList.h; path = ../PiecesList.h; sourceTree = "<group>"; };
+		0A1FB6D31DF48C82003DA76E /* PiecesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PiecesList.m; path = ../PiecesList.m; sourceTree = "<group>"; };
+		0A1FB6D51DF491F0003DA76E /* Sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sha1.h; sourceTree = "<group>"; };
+		0A1FB6D61DF491F0003DA76E /* Sha1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sha1.m; sourceTree = "<group>"; };
 		0A373F961DF36A3F00F07D03 /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
 		0A373F971DF36A3F00F07D03 /* Factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Factory.m; sourceTree = "<group>"; };
 		0A373F991DF36D9300F07D03 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
@@ -114,6 +120,10 @@
 				0A373F971DF36A3F00F07D03 /* Factory.m */,
 				0A373F991DF36D9300F07D03 /* List.h */,
 				0A373F9A1DF36D9300F07D03 /* List.m */,
+				0A1FB6D21DF48C82003DA76E /* PiecesList.h */,
+				0A1FB6D31DF48C82003DA76E /* PiecesList.m */,
+				0A1FB6D51DF491F0003DA76E /* Sha1.h */,
+				0A1FB6D61DF491F0003DA76E /* Sha1.m */,
 				0A373F9C1DF36DAC00F07D03 /* Dictionary.h */,
 				0A373F9D1DF36DAC00F07D03 /* Dictionary.m */,
 				0A373F9F1DF36F4200F07D03 /* String.h */,
@@ -330,11 +340,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1FB6D41DF48C82003DA76E /* PiecesList.m in Sources */,
 				0A373FA11DF36F4200F07D03 /* String.m in Sources */,
 				0A62B89C1DF34148001A4CC6 /* Integer.m in Sources */,
 				0A62B89F1DF3507E001A4CC6 /* FileTree.m in Sources */,
 				0A689ED81DF2F7C300A292DD /* Document.m in Sources */,
 				0A689ED51DF2F7C300A292DD /* main.m in Sources */,
+				0A1FB6D71DF491F0003DA76E /* Sha1.m in Sources */,
 				0A62B8991DF34121001A4CC6 /* Element.m in Sources */,
 				0A373F9B1DF36D9300F07D03 /* List.m in Sources */,
 				0A373F9E1DF36DAC00F07D03 /* Dictionary.m in Sources */,
