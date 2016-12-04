@@ -12,6 +12,8 @@
 + (Element *)terminator;
 
 - (id)copyWithZone:(NSZone *)zone;
+- (Element *)find:(NSString *)name;
+
 @end
 
 

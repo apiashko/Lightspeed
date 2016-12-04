@@ -10,6 +10,13 @@
 #import "Element.h"
 
 @interface FileTree : NSObject
-@property Element* root;
--(FileTree*) init:(NSInputStream*) stream;
+@property Element * __nullable root;
+
+- (FileTree *__nonnull)init:(NSInputStream * __nonnull)stream;
+
+- (NSString *__nonnull)getTitle;
+- (NSString *__nonnull)getDate;
+- (NSString *__nonnull)getTracker;
+- (NSString *__nonnull)getCreator;
+
 @end

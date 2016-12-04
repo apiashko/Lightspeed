@@ -7,10 +7,16 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <AppKit/NSOutlineView.h>
 #import "FileTree.h"
 
-@interface Document : NSDocument
+@interface Document : NSDocument<NSOutlineViewDataSource>
 
-@property FileTree* torrentTree;
+@property FileTree *__nonnull torrentTree;
+
+- (NSInteger)outlineView:(NSOutlineView *__nonnull)outlineView numberOfChildrenOfItem:(nullable id)item;
+- (nonnull id)outlineView:(NSOutlineView *__nonnull)outlineView child:(NSInteger)index ofItem:(nullable id)item;
+- (BOOL)outlineView:(NSOutlineView *__nonnull)outlineView isItemExpandable:(nullable id)item;
+
 @end
 

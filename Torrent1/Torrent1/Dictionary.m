@@ -8,6 +8,7 @@
 
 #import "Dictionary.h"
 #import "Factory.h"
+#import "String.h"
 
 @implementation Dictionary
 
@@ -33,6 +34,40 @@
 		[_data setObject:obj forKey:key];
 	}while(true);
 	return self;
+}
+
+- (Element *)find:(NSString *)name
+{
+	Element * ret = nil;
+	
+	NSEnumerator *enumerator = [_data keyEnumerator];
+	id key = nil;
+	while ( (key = [enumerator nextObject]) != nil)
+	{
+		id obj = [_data objectForKey:key];
+		if ([obj isKindOfClass:[Element class]])
+		{
+			Element *next = (Element *)obj;
+			if ([key isKindOfClass:[String class]])
+			{
+				String *str = (String *)key;
+				if([str.data isEqualToString:name])
+				{
+					ret = (Element *)next;
+				}
+				else
+				{
+					ret = [next find:name];
+				}
+				if(ret != nil)
+				{
+					break;
+				}
+			}
+		}
+	}
+
+	return ret;
 }
 
 @end

@@ -13,5 +13,6 @@
 @property NSMutableDictionary* data;
 
 - (id)copyWithZone:(NSZone *)zone;
--(Dictionary*) init:(NSInputStream*) stream;
+- (Dictionary *)init:(NSInputStream *)stream;
+- (Element *)find:(NSString *)name;
 @end

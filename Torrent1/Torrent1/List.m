@@ -34,4 +34,22 @@
 	return self;
 }
 
+- (Element *)find:(NSString *)name
+{
+	Element * ret = nil;
+	for(id item in _data)
+	{
+		if ([item isKindOfClass:[Element class]])
+		{
+			Element * el = (Element *)item;
+			ret = [el find:name];
+			if(ret != nil)
+			{
+				break;
+			}
+		}
+	}
+	return ret;
+}
+
 @end

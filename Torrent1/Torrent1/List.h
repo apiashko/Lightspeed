@@ -13,5 +13,6 @@
 @property NSMutableArray* data;
 
 - (id)copyWithZone:(NSZone *)zone;
--(List*) init:(NSInputStream*) stream;
+- (List *)init:(NSInputStream *)stream;
+- (Element *)find:(NSString *)name;
 @end

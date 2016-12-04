@@ -15,6 +15,11 @@
 	return [[Element alloc] init];
 }
 
+- (Element *)find:(NSString *)name
+{
+	return nil;
+}
+
 + (Element *)terminator
 {
 	static Element* el = nil;
@@ -24,4 +29,5 @@
 	}
 	return el;
 }
+
 @end
