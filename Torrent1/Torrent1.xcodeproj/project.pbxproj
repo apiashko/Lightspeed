@@ -503,6 +503,7 @@
 				DEVELOPMENT_TEAM = U6ZDYX2A2T;
 				INFOPLIST_FILE = Torrent1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.piashko.Torrent1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -517,6 +518,7 @@
 				DEVELOPMENT_TEAM = U6ZDYX2A2T;
 				INFOPLIST_FILE = Torrent1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = com.piashko.Torrent1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
