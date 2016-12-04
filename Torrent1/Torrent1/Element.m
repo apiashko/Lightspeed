@@ -10,6 +10,13 @@
 
 @implementation Element
 
+-(nonnull id) init
+{
+	self = [super init];
+	_labelSource = (Element *)self;
+	return self;
+}
+
 - (id)copyWithZone:(NSZone *)zone
 {
 	return [[Element alloc] init];
@@ -28,6 +35,25 @@
 		el = [[Element alloc] init];
 	}
 	return el;
+}
+
+- (NSString*)stringValue
+{
+	NSString* ret = [_labelSource label];
+	if(_labelSource == self)
+	{
+		return [self label];
+	}
+	else
+	{
+		return  [NSString stringWithFormat:@"%@: %@", [_labelSource label], [self label]];
+	}
+	return ret;
+}
+
+- (NSString*)label
+{
+	return @"";
 }
 
 @end

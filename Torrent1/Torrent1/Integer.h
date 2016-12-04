@@ -11,8 +11,10 @@
 
 @interface Integer : Element
 @property NSInteger data;
+@property BOOL dateFormat;
 
 - (id)copyWithZone:(NSZone *)zone;
 - (Integer*)init:(NSInputStream *)stream;
 
+- (NSString*)label;
 @end

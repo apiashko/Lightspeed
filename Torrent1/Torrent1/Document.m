@@ -54,6 +54,9 @@ NSString* _Title;
 	
 	// title
 	[self setDisplayName:[_torrentTree getTitle]];
+	
+	// post parsing processing
+	[_torrentTree fixDateFormat];
 
 	return YES;
 }
@@ -92,7 +95,24 @@ NSString* _Title;
 		NSArray<id> * keys = [dict.data allKeys];
 		if(index < [keys count])
 		{
-			return [dict.data objectForKey:[keys objectAtIndex:index]];
+			Element *key = (Element *)[keys objectAtIndex:index];
+#if 0
+			// this just misfires time to time, figure out if you have time left
+			Element *obj = [dict.data objectForKey:key];
+#else
+			static Element *obj = nil;
+			obj = nil;
+			[dict.data enumerateKeysAndObjectsWithOptions:NSEnumerationConcurrent usingBlock:
+				^(id aKey, id anObject, BOOL *stop)
+				{
+					if(key == aKey)
+					{
+						obj = (Element *)anObject;
+						*stop = YES;
+					}
+				}];
+#endif
+			return obj;
 		}
 	}
 	if([item isKindOfClass:[List class]])
@@ -117,5 +137,14 @@ NSString* _Title;
 	return [item isKindOfClass:[Dictionary class]] || [item isKindOfClass:[List class]];
 }
 
+- (void)outlineView:(nonnull NSOutlineView *)outlineView willDisplayCell:(id)cell forTableColumn:(nullable NSTableColumn *)tableColumn item:(nonnull id)item
+{
+	if([cell isKindOfClass:[NSCell class]] && [item isKindOfClass:[Element class]])
+	{
+		NSCell *aCell = (NSCell *)cell;
+		Element *anItem = (Element *)item;
+		aCell.stringValue = [anItem stringValue];
+	}
+}
 
 @end

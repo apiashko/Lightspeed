@@ -7,7 +7,6 @@
 //
 
 #import "String.h"
-//#include <vector>
 
 @implementation String
 
@@ -21,13 +20,28 @@
 -(String*) init:(NSInputStream*)stream length:(NSInteger)toProcess
 {
 	self = [super init];
+	_rawData = nil;
 	NSMutableData* temp = [[NSMutableData alloc] initWithCapacity:toProcess];
 	[temp resetBytesInRange:NSMakeRange(0, toProcess)];
 	if ( [stream read:[temp mutableBytes] maxLength:toProcess] == toProcess)
 	{
 		_data = [[NSString alloc] initWithData:temp encoding:NSUTF8StringEncoding];
+		if(_data == nil)
+		{
+			// not UTF-8 encoding, save the data itself
+			_rawData = temp;
+		}
+	}
+	else
+	{
+		//NSLog(@"error reading string data from streeam");
 	}
 	return self;
+}
+
+- (NSString*)label
+{
+	return _data;
 }
 
 @end

@@ -15,8 +15,6 @@
 - (FileTree *__nonnull)init:(NSInputStream * __nonnull)stream;
 
 - (NSString *__nonnull)getTitle;
-- (NSString *__nonnull)getDate;
-- (NSString *__nonnull)getTracker;
-- (NSString *__nonnull)getCreator;
+- (void)fixDateFormat;
 
 @end

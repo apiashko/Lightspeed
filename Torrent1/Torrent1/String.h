@@ -12,8 +12,11 @@
 @interface String : Element
 
 @property NSString* data;
+@property NSData* rawData;
 
 - (id)copyWithZone:(NSZone *)zone;
--(String*) init:(NSInputStream*)stream length:(NSInteger)toProcess;
+- (String *)init:(NSInputStream *)stream length:(NSInteger)toProcess;
+
+- (NSString*)label;
 
 @end

@@ -9,6 +9,7 @@
 #import "Dictionary.h"
 #import "Factory.h"
 #import "String.h"
+#import "List.h"
 
 @implementation Dictionary
 
@@ -30,7 +31,18 @@
 		{
 			break;
 		}
+		//clamp size 1 lists
 		Element* obj = [Factory create:stream];
+		if ([obj isKindOfClass:[List class]])
+		{
+			List *lst = (List *)obj;
+			if([lst.data count] == 1)
+			{
+				obj = (Element *)[lst.data objectAtIndex:0];
+			}
+		}
+		// labels
+		obj.labelSource = key;
 		[_data setObject:obj forKey:key];
 	}while(true);
 	return self;
@@ -68,6 +80,11 @@
 	}
 
 	return ret;
+}
+
+- (NSString*)label
+{
+	return [NSString stringWithFormat:@"(%d items)", (int)([_data count])];
 }
 
 @end

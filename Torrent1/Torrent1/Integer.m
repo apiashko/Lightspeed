@@ -20,6 +20,7 @@
 -(Integer*) init:(NSInputStream*) stream
 {
 	self = [super init];
+	_dateFormat = NO;
 	// max for int is 4294967295 - 10 characters, one for 'e' terminator, one just in case
 	uint8_t bytes[12] = {};
 	NSInteger read = 0;
@@ -38,6 +39,21 @@
 		}
 	}
 	return self;
+}
+
+- (NSString*)label
+{
+	if(self.dateFormat)
+	{
+		NSDate* date = [NSDate dateWithTimeIntervalSince1970:self.data];
+		NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+		formatter.dateStyle = kCFDateFormatterFullStyle;
+		return [formatter stringFromDate:date];
+	}
+	else
+	{
+		return [NSString stringWithFormat:@"%d", (int)(self.data)];
+	}
 }
 
 @end

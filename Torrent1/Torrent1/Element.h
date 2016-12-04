@@ -8,12 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Element : NSObject<NSCopying>
-+ (Element *)terminator;
+@class Element;
 
+@interface Element : NSObject<NSCopying>
+@property Element * labelSource;
+- (nonnull id)init;
 - (id)copyWithZone:(NSZone *)zone;
 - (Element *)find:(NSString *)name;
 
+- (NSString*)stringValue;
+- (NSString*)label;
+
++ (Element *)terminator;
 @end
 
 

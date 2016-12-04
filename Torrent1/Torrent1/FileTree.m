@@ -32,43 +32,14 @@
 	return ret;
 }
 
--(NSString *)getTracker
+-(void)fixDateFormat
 {
-	NSString* ret = @"not found";
-	Element *el = [_root find:@"announce"];
-	if(el && [el isKindOfClass:[String class]])
-	{
-		String * str = (String *)el;
-		ret = str.data;
-	}
-	return ret;
-}
-
--(NSString *)getDate
-{
-	NSString* ret = @"not found";
 	Element *el = [_root find:@"creation date"];
 	if(el && [el isKindOfClass:[Integer class]])
 	{
 		Integer * val = (Integer *)el;
-		NSDate* date = [NSDate dateWithTimeIntervalSince1970:val.data];
-		NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-		formatter.dateStyle = kCFDateFormatterFullStyle;
-		ret = [formatter stringFromDate:date];
+		val.dateFormat = YES;
 	}
-	return ret;
-}
-
--(NSString *)getCreator
-{
-	NSString* ret = @"not found";
-	Element *el = [_root find:@"created by"];
-	if(el && [el isKindOfClass:[String class]])
-	{
-		String * str = (String *)el;
-		ret = str.data;
-	}
-	return ret;
 }
 
 @end

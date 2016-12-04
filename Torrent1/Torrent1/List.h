@@ -15,4 +15,6 @@
 - (id)copyWithZone:(NSZone *)zone;
 - (List *)init:(NSInputStream *)stream;
 - (Element *)find:(NSString *)name;
+
+- (NSString*)label;
 @end
